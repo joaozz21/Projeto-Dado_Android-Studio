@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Donnie</string>
+    <string name="d6">D6</string>
+    <string name="d20">D20</string>
+    <string name="d12">D12</string>
+    <string name="todo">TODO</string>
+</resources>
