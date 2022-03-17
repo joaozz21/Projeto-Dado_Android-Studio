@@ -7,6 +7,17 @@
     android:backgroundTint="@color/white"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wllpp" />
+
     <Button
         android:id="@+id/buttonD6"
         android:layout_width="0dp"
@@ -14,7 +25,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="60dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#4CD9F2"
         android:fontFamily="sans-serif-black"
         android:text="@string/d6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +39,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="60dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#4CD9F2"
         android:fontFamily="sans-serif-black"
         android:text="@string/d12"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +54,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="60dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#4CD9F2"
         android:fontFamily="sans-serif-black"
         android:text="@string/d20"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +69,10 @@
         android:layout_marginStart="174dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="177dp"
+        android:backgroundTint="#00712020"
+        android:drawableTint="#00127AA7"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,4 +91,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dice_1"
         android:contentDescription="@string/todo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
