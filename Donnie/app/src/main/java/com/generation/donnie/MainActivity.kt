@@ -1,10 +1,12 @@
 package com.generation.donnie
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.result.contract.ActivityResultContracts
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,19 +15,26 @@ class MainActivity : AppCompatActivity() {
         val d6: Button = findViewById(R.id.buttonD6)
         val d12: Button = findViewById(R.id.buttonD12)
         val d20: Button = findViewById(R.id.buttonD20)
+        val segundaTela = Intent(this,SegundaActivity::class.java)
+        val terceiraTela = Intent(this,TerceiraActivity::class.java)
+        val quartaTela = Intent(this,QuartaActivity::class.java)
+
 
         d6.setOnClickListener {
-            rolar(6)
+           // rolar(6)
+            startActivity(segundaTela)
         }
         d12.setOnClickListener {
-            rolar(12)
+            //rolar(12)
+            startActivity(terceiraTela)
         }
         d20.setOnClickListener {
-            rolar(20)
+            //rolar(20)
+            startActivity(quartaTela)
         }
     }
 
-    fun rolar(lados: Int) {
+    /*fun rolar(lados: Int) {
         val valor = (1..lados).random()
         val resultado = findViewById<TextView>(R.id.Resultado)
         resultado.text = valor.toString()
@@ -58,5 +67,5 @@ class MainActivity : AppCompatActivity() {
             19 -> R.drawable.d20_19
             else -> R.drawable.d20_20
         }
-    }
+    }*/
 }

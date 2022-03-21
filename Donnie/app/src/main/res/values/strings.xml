@@ -3,5 +3,7 @@
     <string name="d6">D6</string>
     <string name="d20">D20</string>
     <string name="d12">D12</string>
+    <string name="roll_the_dice">Roll the Dice</string>
+    <string name="button">Button</string>
     <string name="todo">TODO</string>
 </resources>
